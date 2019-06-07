@@ -1,0 +1,1073 @@
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Columnas.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Columnas_Write,"ax",%progbits
+  20              		.align	2
+  21              		.global	Columnas_Write
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Columnas_Write, %function
+  25              	Columnas_Write:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC5\\Columnas.c"
+   1:Generated_Source\PSoC5/Columnas.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Columnas.c **** * File Name: Columnas.c  
+   3:Generated_Source\PSoC5/Columnas.c **** * Version 2.20
+   4:Generated_Source\PSoC5/Columnas.c **** *
+   5:Generated_Source\PSoC5/Columnas.c **** * Description:
+   6:Generated_Source\PSoC5/Columnas.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:Generated_Source\PSoC5/Columnas.c **** *
+   8:Generated_Source\PSoC5/Columnas.c **** * Note:
+   9:Generated_Source\PSoC5/Columnas.c **** *
+  10:Generated_Source\PSoC5/Columnas.c **** ********************************************************************************
+  11:Generated_Source\PSoC5/Columnas.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC5/Columnas.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC5/Columnas.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC5/Columnas.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC5/Columnas.c **** *******************************************************************************/
+  16:Generated_Source\PSoC5/Columnas.c **** 
+  17:Generated_Source\PSoC5/Columnas.c **** #include "cytypes.h"
+  18:Generated_Source\PSoC5/Columnas.c **** #include "Columnas.h"
+  19:Generated_Source\PSoC5/Columnas.c **** 
+  20:Generated_Source\PSoC5/Columnas.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:Generated_Source\PSoC5/Columnas.c **** #if !(CY_PSOC5A &&\
+  22:Generated_Source\PSoC5/Columnas.c **** 	 Columnas__PORT == 15 && ((Columnas__MASK & 0xC0) != 0))
+  23:Generated_Source\PSoC5/Columnas.c **** 
+  24:Generated_Source\PSoC5/Columnas.c **** 
+  25:Generated_Source\PSoC5/Columnas.c **** /*******************************************************************************
+  26:Generated_Source\PSoC5/Columnas.c **** * Function Name: Columnas_Write
+  27:Generated_Source\PSoC5/Columnas.c **** ****************************************************************************//**
+  28:Generated_Source\PSoC5/Columnas.c **** *
+  29:Generated_Source\PSoC5/Columnas.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:Generated_Source\PSoC5/Columnas.c **** *  and shifting the bits appropriately. 
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 2
+
+
+  31:Generated_Source\PSoC5/Columnas.c **** *
+  32:Generated_Source\PSoC5/Columnas.c **** * The data output register controls the signal applied to the physical pin in 
+  33:Generated_Source\PSoC5/Columnas.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:Generated_Source\PSoC5/Columnas.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:Generated_Source\PSoC5/Columnas.c **** * bit banding).
+  36:Generated_Source\PSoC5/Columnas.c **** *
+  37:Generated_Source\PSoC5/Columnas.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:Generated_Source\PSoC5/Columnas.c **** * as it is driven by the hardware signal attached to it.
+  39:Generated_Source\PSoC5/Columnas.c **** *
+  40:Generated_Source\PSoC5/Columnas.c **** * \param value
+  41:Generated_Source\PSoC5/Columnas.c **** *  Value to write to the component instance.
+  42:Generated_Source\PSoC5/Columnas.c **** *
+  43:Generated_Source\PSoC5/Columnas.c **** * \return 
+  44:Generated_Source\PSoC5/Columnas.c **** *  None 
+  45:Generated_Source\PSoC5/Columnas.c **** *
+  46:Generated_Source\PSoC5/Columnas.c **** * \sideeffect
+  47:Generated_Source\PSoC5/Columnas.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:Generated_Source\PSoC5/Columnas.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:Generated_Source\PSoC5/Columnas.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:Generated_Source\PSoC5/Columnas.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:Generated_Source\PSoC5/Columnas.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:Generated_Source\PSoC5/Columnas.c **** *  this function.
+  53:Generated_Source\PSoC5/Columnas.c **** *
+  54:Generated_Source\PSoC5/Columnas.c **** * \funcusage
+  55:Generated_Source\PSoC5/Columnas.c **** *  \snippet Columnas_SUT.c usage_Columnas_Write
+  56:Generated_Source\PSoC5/Columnas.c **** *******************************************************************************/
+  57:Generated_Source\PSoC5/Columnas.c **** void Columnas_Write(uint8 value)
+  58:Generated_Source\PSoC5/Columnas.c **** {
+  28              		.loc 1 58 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  59:Generated_Source\PSoC5/Columnas.c ****     uint8 staticBits = (Columnas_DR & (uint8)(~Columnas_MASK));
+  34              		.loc 1 59 0
+  35 0000 044A     		ldr	r2, .L2
+  36 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  37 0004 03F0F803 		and	r3, r3, #248
+  38              	.LVL1:
+  60:Generated_Source\PSoC5/Columnas.c ****     Columnas_DR = staticBits | ((uint8)(value << Columnas_SHIFT) & Columnas_MASK);
+  39              		.loc 1 60 0
+  40 0008 00F00700 		and	r0, r0, #7
+  41              	.LVL2:
+  42 000c 1843     		orrs	r0, r0, r3
+  43 000e 1070     		strb	r0, [r2]
+  44 0010 7047     		bx	lr
+  45              	.L3:
+  46 0012 00BF     		.align	2
+  47              	.L2:
+  48 0014 20510040 		.word	1073762592
+  49              		.cfi_endproc
+  50              	.LFE0:
+  51              		.size	Columnas_Write, .-Columnas_Write
+  52              		.section	.text.Columnas_SetDriveMode,"ax",%progbits
+  53              		.align	2
+  54              		.global	Columnas_SetDriveMode
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 3
+
+
+  55              		.thumb
+  56              		.thumb_func
+  57              		.type	Columnas_SetDriveMode, %function
+  58              	Columnas_SetDriveMode:
+  59              	.LFB1:
+  61:Generated_Source\PSoC5/Columnas.c **** }
+  62:Generated_Source\PSoC5/Columnas.c **** 
+  63:Generated_Source\PSoC5/Columnas.c **** 
+  64:Generated_Source\PSoC5/Columnas.c **** /*******************************************************************************
+  65:Generated_Source\PSoC5/Columnas.c **** * Function Name: Columnas_SetDriveMode
+  66:Generated_Source\PSoC5/Columnas.c **** ****************************************************************************//**
+  67:Generated_Source\PSoC5/Columnas.c **** *
+  68:Generated_Source\PSoC5/Columnas.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:Generated_Source\PSoC5/Columnas.c **** * 
+  70:Generated_Source\PSoC5/Columnas.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:Generated_Source\PSoC5/Columnas.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:Generated_Source\PSoC5/Columnas.c **** *
+  73:Generated_Source\PSoC5/Columnas.c **** * \param mode
+  74:Generated_Source\PSoC5/Columnas.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:Generated_Source\PSoC5/Columnas.c **** *  \ref driveMode.
+  76:Generated_Source\PSoC5/Columnas.c **** *
+  77:Generated_Source\PSoC5/Columnas.c **** * \return
+  78:Generated_Source\PSoC5/Columnas.c **** *  None
+  79:Generated_Source\PSoC5/Columnas.c **** *
+  80:Generated_Source\PSoC5/Columnas.c **** * \sideeffect
+  81:Generated_Source\PSoC5/Columnas.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:Generated_Source\PSoC5/Columnas.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:Generated_Source\PSoC5/Columnas.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:Generated_Source\PSoC5/Columnas.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:Generated_Source\PSoC5/Columnas.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:Generated_Source\PSoC5/Columnas.c **** *
+  87:Generated_Source\PSoC5/Columnas.c **** * \funcusage
+  88:Generated_Source\PSoC5/Columnas.c **** *  \snippet Columnas_SUT.c usage_Columnas_SetDriveMode
+  89:Generated_Source\PSoC5/Columnas.c **** *******************************************************************************/
+  90:Generated_Source\PSoC5/Columnas.c **** void Columnas_SetDriveMode(uint8 mode)
+  91:Generated_Source\PSoC5/Columnas.c **** {
+  60              		.loc 1 91 0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64              		@ link register save eliminated.
+  65              	.LVL3:
+  92:Generated_Source\PSoC5/Columnas.c **** 	CyPins_SetPinDriveMode(Columnas_0, mode);
+  66              		.loc 1 92 0
+  67 0000 0A4A     		ldr	r2, .L5
+  68 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  69 0004 00F00E00 		and	r0, r0, #14
+  70              	.LVL4:
+  71 0008 03F0F103 		and	r3, r3, #241
+  72 000c 0343     		orrs	r3, r3, r0
+  73 000e 1370     		strb	r3, [r2]
+  93:Generated_Source\PSoC5/Columnas.c **** 	CyPins_SetPinDriveMode(Columnas_1, mode);
+  74              		.loc 1 93 0
+  75 0010 0132     		adds	r2, r2, #1
+  76 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  77 0014 03F0F103 		and	r3, r3, #241
+  78 0018 0343     		orrs	r3, r3, r0
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 4
+
+
+  79 001a 1370     		strb	r3, [r2]
+  94:Generated_Source\PSoC5/Columnas.c **** 	CyPins_SetPinDriveMode(Columnas_2, mode);
+  80              		.loc 1 94 0
+  81 001c 0132     		adds	r2, r2, #1
+  82 001e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  83 0020 03F0F103 		and	r3, r3, #241
+  84 0024 1843     		orrs	r0, r0, r3
+  85 0026 1070     		strb	r0, [r2]
+  86 0028 7047     		bx	lr
+  87              	.L6:
+  88 002a 00BF     		.align	2
+  89              	.L5:
+  90 002c 10500040 		.word	1073762320
+  91              		.cfi_endproc
+  92              	.LFE1:
+  93              		.size	Columnas_SetDriveMode, .-Columnas_SetDriveMode
+  94              		.section	.text.Columnas_Read,"ax",%progbits
+  95              		.align	2
+  96              		.global	Columnas_Read
+  97              		.thumb
+  98              		.thumb_func
+  99              		.type	Columnas_Read, %function
+ 100              	Columnas_Read:
+ 101              	.LFB2:
+  95:Generated_Source\PSoC5/Columnas.c **** }
+  96:Generated_Source\PSoC5/Columnas.c **** 
+  97:Generated_Source\PSoC5/Columnas.c **** 
+  98:Generated_Source\PSoC5/Columnas.c **** /*******************************************************************************
+  99:Generated_Source\PSoC5/Columnas.c **** * Function Name: Columnas_Read
+ 100:Generated_Source\PSoC5/Columnas.c **** ****************************************************************************//**
+ 101:Generated_Source\PSoC5/Columnas.c **** *
+ 102:Generated_Source\PSoC5/Columnas.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 103:Generated_Source\PSoC5/Columnas.c **** *  the required bits according to the width and bit position of the component
+ 104:Generated_Source\PSoC5/Columnas.c **** *  instance. 
+ 105:Generated_Source\PSoC5/Columnas.c **** *
+ 106:Generated_Source\PSoC5/Columnas.c **** * The pin's status register returns the current logic level present on the 
+ 107:Generated_Source\PSoC5/Columnas.c **** * physical pin.
+ 108:Generated_Source\PSoC5/Columnas.c **** *
+ 109:Generated_Source\PSoC5/Columnas.c **** * \return 
+ 110:Generated_Source\PSoC5/Columnas.c **** *  The current value for the pins in the component as a right justified number.
+ 111:Generated_Source\PSoC5/Columnas.c **** *
+ 112:Generated_Source\PSoC5/Columnas.c **** * \funcusage
+ 113:Generated_Source\PSoC5/Columnas.c **** *  \snippet Columnas_SUT.c usage_Columnas_Read  
+ 114:Generated_Source\PSoC5/Columnas.c **** *******************************************************************************/
+ 115:Generated_Source\PSoC5/Columnas.c **** uint8 Columnas_Read(void)
+ 116:Generated_Source\PSoC5/Columnas.c **** {
+ 102              		.loc 1 116 0
+ 103              		.cfi_startproc
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              		@ link register save eliminated.
+ 117:Generated_Source\PSoC5/Columnas.c ****     return (Columnas_PS & Columnas_MASK) >> Columnas_SHIFT;
+ 107              		.loc 1 117 0
+ 108 0000 024B     		ldr	r3, .L8
+ 109 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 118:Generated_Source\PSoC5/Columnas.c **** }
+ 110              		.loc 1 118 0
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 5
+
+
+ 111 0004 00F00700 		and	r0, r0, #7
+ 112 0008 7047     		bx	lr
+ 113              	.L9:
+ 114 000a 00BF     		.align	2
+ 115              	.L8:
+ 116 000c 21510040 		.word	1073762593
+ 117              		.cfi_endproc
+ 118              	.LFE2:
+ 119              		.size	Columnas_Read, .-Columnas_Read
+ 120              		.section	.text.Columnas_ReadDataReg,"ax",%progbits
+ 121              		.align	2
+ 122              		.global	Columnas_ReadDataReg
+ 123              		.thumb
+ 124              		.thumb_func
+ 125              		.type	Columnas_ReadDataReg, %function
+ 126              	Columnas_ReadDataReg:
+ 127              	.LFB3:
+ 119:Generated_Source\PSoC5/Columnas.c **** 
+ 120:Generated_Source\PSoC5/Columnas.c **** 
+ 121:Generated_Source\PSoC5/Columnas.c **** /*******************************************************************************
+ 122:Generated_Source\PSoC5/Columnas.c **** * Function Name: Columnas_ReadDataReg
+ 123:Generated_Source\PSoC5/Columnas.c **** ****************************************************************************//**
+ 124:Generated_Source\PSoC5/Columnas.c **** *
+ 125:Generated_Source\PSoC5/Columnas.c **** * \brief Reads the associated physical port's data output register and masks 
+ 126:Generated_Source\PSoC5/Columnas.c **** *  the correct bits according to the width and bit position of the component 
+ 127:Generated_Source\PSoC5/Columnas.c **** *  instance. 
+ 128:Generated_Source\PSoC5/Columnas.c **** *
+ 129:Generated_Source\PSoC5/Columnas.c **** * The data output register controls the signal applied to the physical pin in 
+ 130:Generated_Source\PSoC5/Columnas.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 131:Generated_Source\PSoC5/Columnas.c **** * preferred Columnas_Read() API because the 
+ 132:Generated_Source\PSoC5/Columnas.c **** * Columnas_ReadDataReg() reads the data register instead of the status 
+ 133:Generated_Source\PSoC5/Columnas.c **** * register. For output pins this is a useful function to determine the value 
+ 134:Generated_Source\PSoC5/Columnas.c **** * just written to the pin.
+ 135:Generated_Source\PSoC5/Columnas.c **** *
+ 136:Generated_Source\PSoC5/Columnas.c **** * \return 
+ 137:Generated_Source\PSoC5/Columnas.c **** *  The current value of the data register masked and shifted into a right 
+ 138:Generated_Source\PSoC5/Columnas.c **** *  justified number for the component instance.
+ 139:Generated_Source\PSoC5/Columnas.c **** *
+ 140:Generated_Source\PSoC5/Columnas.c **** * \funcusage
+ 141:Generated_Source\PSoC5/Columnas.c **** *  \snippet Columnas_SUT.c usage_Columnas_ReadDataReg 
+ 142:Generated_Source\PSoC5/Columnas.c **** *******************************************************************************/
+ 143:Generated_Source\PSoC5/Columnas.c **** uint8 Columnas_ReadDataReg(void)
+ 144:Generated_Source\PSoC5/Columnas.c **** {
+ 128              		.loc 1 144 0
+ 129              		.cfi_startproc
+ 130              		@ args = 0, pretend = 0, frame = 0
+ 131              		@ frame_needed = 0, uses_anonymous_args = 0
+ 132              		@ link register save eliminated.
+ 145:Generated_Source\PSoC5/Columnas.c ****     return (Columnas_DR & Columnas_MASK) >> Columnas_SHIFT;
+ 133              		.loc 1 145 0
+ 134 0000 024B     		ldr	r3, .L11
+ 135 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 146:Generated_Source\PSoC5/Columnas.c **** }
+ 136              		.loc 1 146 0
+ 137 0004 00F00700 		and	r0, r0, #7
+ 138 0008 7047     		bx	lr
+ 139              	.L12:
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 6
+
+
+ 140 000a 00BF     		.align	2
+ 141              	.L11:
+ 142 000c 20510040 		.word	1073762592
+ 143              		.cfi_endproc
+ 144              	.LFE3:
+ 145              		.size	Columnas_ReadDataReg, .-Columnas_ReadDataReg
+ 146              		.section	.text.Columnas_SetInterruptMode,"ax",%progbits
+ 147              		.align	2
+ 148              		.global	Columnas_SetInterruptMode
+ 149              		.thumb
+ 150              		.thumb_func
+ 151              		.type	Columnas_SetInterruptMode, %function
+ 152              	Columnas_SetInterruptMode:
+ 153              	.LFB4:
+ 147:Generated_Source\PSoC5/Columnas.c **** 
+ 148:Generated_Source\PSoC5/Columnas.c **** 
+ 149:Generated_Source\PSoC5/Columnas.c **** /* If interrupt is connected for this Pins component */ 
+ 150:Generated_Source\PSoC5/Columnas.c **** #if defined(Columnas_INTSTAT) 
+ 151:Generated_Source\PSoC5/Columnas.c **** 
+ 152:Generated_Source\PSoC5/Columnas.c ****     /*******************************************************************************
+ 153:Generated_Source\PSoC5/Columnas.c ****     * Function Name: Columnas_SetInterruptMode
+ 154:Generated_Source\PSoC5/Columnas.c ****     ****************************************************************************//**
+ 155:Generated_Source\PSoC5/Columnas.c ****     *
+ 156:Generated_Source\PSoC5/Columnas.c ****     * \brief Configures the interrupt mode for each of the Pins component's
+ 157:Generated_Source\PSoC5/Columnas.c ****     *  pins. Alternatively you may set the interrupt mode for all the pins
+ 158:Generated_Source\PSoC5/Columnas.c ****     *  specified in the Pins component.
+ 159:Generated_Source\PSoC5/Columnas.c ****     *
+ 160:Generated_Source\PSoC5/Columnas.c ****     *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 161:Generated_Source\PSoC5/Columnas.c ****     *  interrupt may trigger it.
+ 162:Generated_Source\PSoC5/Columnas.c ****     *
+ 163:Generated_Source\PSoC5/Columnas.c ****     * \param position
+ 164:Generated_Source\PSoC5/Columnas.c ****     *  The pin position as listed in the Pins component. You may OR these to be 
+ 165:Generated_Source\PSoC5/Columnas.c ****     *  able to configure the interrupt mode of multiple pins within a Pins 
+ 166:Generated_Source\PSoC5/Columnas.c ****     *  component. Or you may use Columnas_INTR_ALL to configure the
+ 167:Generated_Source\PSoC5/Columnas.c ****     *  interrupt mode of all the pins in the Pins component.       
+ 168:Generated_Source\PSoC5/Columnas.c ****     *  - Columnas_0_INTR       (First pin in the list)
+ 169:Generated_Source\PSoC5/Columnas.c ****     *  - Columnas_1_INTR       (Second pin in the list)
+ 170:Generated_Source\PSoC5/Columnas.c ****     *  - ...
+ 171:Generated_Source\PSoC5/Columnas.c ****     *  - Columnas_INTR_ALL     (All pins in Pins component)
+ 172:Generated_Source\PSoC5/Columnas.c ****     *
+ 173:Generated_Source\PSoC5/Columnas.c ****     * \param mode
+ 174:Generated_Source\PSoC5/Columnas.c ****     *  Interrupt mode for the selected pins. Valid options are documented in
+ 175:Generated_Source\PSoC5/Columnas.c ****     *  \ref intrMode.
+ 176:Generated_Source\PSoC5/Columnas.c ****     *
+ 177:Generated_Source\PSoC5/Columnas.c ****     * \return 
+ 178:Generated_Source\PSoC5/Columnas.c ****     *  None
+ 179:Generated_Source\PSoC5/Columnas.c ****     *  
+ 180:Generated_Source\PSoC5/Columnas.c ****     * \sideeffect
+ 181:Generated_Source\PSoC5/Columnas.c ****     *  It is recommended that the interrupt be disabled before calling this 
+ 182:Generated_Source\PSoC5/Columnas.c ****     *  function to avoid unintended interrupt requests. Note that the interrupt
+ 183:Generated_Source\PSoC5/Columnas.c ****     *  type is port wide, and therefore will trigger for any enabled pin on the 
+ 184:Generated_Source\PSoC5/Columnas.c ****     *  port.
+ 185:Generated_Source\PSoC5/Columnas.c ****     *
+ 186:Generated_Source\PSoC5/Columnas.c ****     * \funcusage
+ 187:Generated_Source\PSoC5/Columnas.c ****     *  \snippet Columnas_SUT.c usage_Columnas_SetInterruptMode
+ 188:Generated_Source\PSoC5/Columnas.c ****     *******************************************************************************/
+ 189:Generated_Source\PSoC5/Columnas.c ****     void Columnas_SetInterruptMode(uint16 position, uint16 mode)
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 7
+
+
+ 190:Generated_Source\PSoC5/Columnas.c ****     {
+ 154              		.loc 1 190 0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ 159              	.LVL5:
+ 191:Generated_Source\PSoC5/Columnas.c **** 		if((position & Columnas_0_INTR) != 0u) 
+ 160              		.loc 1 191 0
+ 161 0000 10F0010F 		tst	r0, #1
+ 162 0004 02D0     		beq	.L14
+ 192:Generated_Source\PSoC5/Columnas.c **** 		{ 
+ 193:Generated_Source\PSoC5/Columnas.c **** 			 Columnas_0_INTTYPE_REG = (uint8)mode; 
+ 163              		.loc 1 193 0
+ 164 0006 CBB2     		uxtb	r3, r1
+ 165 0008 084A     		ldr	r2, .L17
+ 166 000a 1370     		strb	r3, [r2]
+ 167              	.L14:
+ 194:Generated_Source\PSoC5/Columnas.c **** 		} 
+ 195:Generated_Source\PSoC5/Columnas.c **** 		if((position & Columnas_1_INTR) != 0u) 
+ 168              		.loc 1 195 0
+ 169 000c 00F00203 		and	r3, r0, #2
+ 170 0010 9BB2     		uxth	r3, r3
+ 171 0012 13B1     		cbz	r3, .L15
+ 196:Generated_Source\PSoC5/Columnas.c **** 		{ 
+ 197:Generated_Source\PSoC5/Columnas.c **** 			 Columnas_1_INTTYPE_REG = (uint8)mode; 
+ 172              		.loc 1 197 0
+ 173 0014 CBB2     		uxtb	r3, r1
+ 174 0016 064A     		ldr	r2, .L17+4
+ 175 0018 1370     		strb	r3, [r2]
+ 176              	.L15:
+ 198:Generated_Source\PSoC5/Columnas.c **** 		} 
+ 199:Generated_Source\PSoC5/Columnas.c **** 		if((position & Columnas_2_INTR) != 0u) 
+ 177              		.loc 1 199 0
+ 178 001a 00F00400 		and	r0, r0, #4
+ 179              	.LVL6:
+ 180 001e 80B2     		uxth	r0, r0
+ 181 0020 10B1     		cbz	r0, .L13
+ 200:Generated_Source\PSoC5/Columnas.c **** 		{ 
+ 201:Generated_Source\PSoC5/Columnas.c **** 			 Columnas_2_INTTYPE_REG = (uint8)mode; 
+ 182              		.loc 1 201 0
+ 183 0022 C9B2     		uxtb	r1, r1
+ 184              	.LVL7:
+ 185 0024 034B     		ldr	r3, .L17+8
+ 186 0026 1970     		strb	r1, [r3]
+ 187              	.L13:
+ 188 0028 7047     		bx	lr
+ 189              	.L18:
+ 190 002a 00BF     		.align	2
+ 191              	.L17:
+ 192 002c 10450040 		.word	1073759504
+ 193 0030 11450040 		.word	1073759505
+ 194 0034 12450040 		.word	1073759506
+ 195              		.cfi_endproc
+ 196              	.LFE4:
+ 197              		.size	Columnas_SetInterruptMode, .-Columnas_SetInterruptMode
+ 198              		.section	.text.Columnas_ClearInterrupt,"ax",%progbits
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 8
+
+
+ 199              		.align	2
+ 200              		.global	Columnas_ClearInterrupt
+ 201              		.thumb
+ 202              		.thumb_func
+ 203              		.type	Columnas_ClearInterrupt, %function
+ 204              	Columnas_ClearInterrupt:
+ 205              	.LFB5:
+ 202:Generated_Source\PSoC5/Columnas.c **** 		}
+ 203:Generated_Source\PSoC5/Columnas.c ****     }
+ 204:Generated_Source\PSoC5/Columnas.c ****     
+ 205:Generated_Source\PSoC5/Columnas.c ****     
+ 206:Generated_Source\PSoC5/Columnas.c ****     /*******************************************************************************
+ 207:Generated_Source\PSoC5/Columnas.c ****     * Function Name: Columnas_ClearInterrupt
+ 208:Generated_Source\PSoC5/Columnas.c ****     ****************************************************************************//**
+ 209:Generated_Source\PSoC5/Columnas.c ****     *
+ 210:Generated_Source\PSoC5/Columnas.c ****     * \brief Clears any active interrupts attached with the component and returns 
+ 211:Generated_Source\PSoC5/Columnas.c ****     *  the value of the interrupt status register allowing determination of which
+ 212:Generated_Source\PSoC5/Columnas.c ****     *  pins generated an interrupt event.
+ 213:Generated_Source\PSoC5/Columnas.c ****     *
+ 214:Generated_Source\PSoC5/Columnas.c ****     * \return 
+ 215:Generated_Source\PSoC5/Columnas.c ****     *  The right-shifted current value of the interrupt status register. Each pin 
+ 216:Generated_Source\PSoC5/Columnas.c ****     *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 217:Generated_Source\PSoC5/Columnas.c ****     *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 218:Generated_Source\PSoC5/Columnas.c ****     *  
+ 219:Generated_Source\PSoC5/Columnas.c ****     * \sideeffect
+ 220:Generated_Source\PSoC5/Columnas.c ****     *  Clears all bits of the physical port's interrupt status register, not just
+ 221:Generated_Source\PSoC5/Columnas.c ****     *  those associated with the Pins component.
+ 222:Generated_Source\PSoC5/Columnas.c ****     *
+ 223:Generated_Source\PSoC5/Columnas.c ****     * \funcusage
+ 224:Generated_Source\PSoC5/Columnas.c ****     *  \snippet Columnas_SUT.c usage_Columnas_ClearInterrupt
+ 225:Generated_Source\PSoC5/Columnas.c ****     *******************************************************************************/
+ 226:Generated_Source\PSoC5/Columnas.c ****     uint8 Columnas_ClearInterrupt(void)
+ 227:Generated_Source\PSoC5/Columnas.c ****     {
+ 206              		.loc 1 227 0
+ 207              		.cfi_startproc
+ 208              		@ args = 0, pretend = 0, frame = 0
+ 209              		@ frame_needed = 0, uses_anonymous_args = 0
+ 210              		@ link register save eliminated.
+ 228:Generated_Source\PSoC5/Columnas.c ****         return (Columnas_INTSTAT & Columnas_MASK) >> Columnas_SHIFT;
+ 211              		.loc 1 228 0
+ 212 0000 024B     		ldr	r3, .L20
+ 213 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 229:Generated_Source\PSoC5/Columnas.c ****     }
+ 214              		.loc 1 229 0
+ 215 0004 00F00700 		and	r0, r0, #7
+ 216 0008 7047     		bx	lr
+ 217              	.L21:
+ 218 000a 00BF     		.align	2
+ 219              	.L20:
+ 220 000c 82450040 		.word	1073759618
+ 221              		.cfi_endproc
+ 222              	.LFE5:
+ 223              		.size	Columnas_ClearInterrupt, .-Columnas_ClearInterrupt
+ 224              		.text
+ 225              	.Letext0:
+ 226              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 227              		.section	.debug_info,"",%progbits
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 9
+
+
+ 228              	.Ldebug_info0:
+ 229 0000 70010000 		.4byte	0x170
+ 230 0004 0400     		.2byte	0x4
+ 231 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 232 000a 04       		.byte	0x4
+ 233 000b 01       		.uleb128 0x1
+ 234 000c 4C000000 		.4byte	.LASF24
+ 235 0010 0C       		.byte	0xc
+ 236 0011 04010000 		.4byte	.LASF25
+ 237 0015 C7010000 		.4byte	.LASF26
+ 238 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 239 001d 00000000 		.4byte	0
+ 240 0021 00000000 		.4byte	.Ldebug_line0
+ 241 0025 02       		.uleb128 0x2
+ 242 0026 01       		.byte	0x1
+ 243 0027 06       		.byte	0x6
+ 244 0028 3B020000 		.4byte	.LASF0
+ 245 002c 02       		.uleb128 0x2
+ 246 002d 01       		.byte	0x1
+ 247 002e 08       		.byte	0x8
+ 248 002f 3E000000 		.4byte	.LASF1
+ 249 0033 02       		.uleb128 0x2
+ 250 0034 02       		.byte	0x2
+ 251 0035 05       		.byte	0x5
+ 252 0036 B7010000 		.4byte	.LASF2
+ 253 003a 02       		.uleb128 0x2
+ 254 003b 02       		.byte	0x2
+ 255 003c 07       		.byte	0x7
+ 256 003d F1000000 		.4byte	.LASF3
+ 257 0041 02       		.uleb128 0x2
+ 258 0042 04       		.byte	0x4
+ 259 0043 05       		.byte	0x5
+ 260 0044 1D020000 		.4byte	.LASF4
+ 261 0048 02       		.uleb128 0x2
+ 262 0049 04       		.byte	0x4
+ 263 004a 07       		.byte	0x7
+ 264 004b DF000000 		.4byte	.LASF5
+ 265 004f 02       		.uleb128 0x2
+ 266 0050 08       		.byte	0x8
+ 267 0051 05       		.byte	0x5
+ 268 0052 A4010000 		.4byte	.LASF6
+ 269 0056 02       		.uleb128 0x2
+ 270 0057 08       		.byte	0x8
+ 271 0058 07       		.byte	0x7
+ 272 0059 58010000 		.4byte	.LASF7
+ 273 005d 03       		.uleb128 0x3
+ 274 005e 04       		.byte	0x4
+ 275 005f 05       		.byte	0x5
+ 276 0060 696E7400 		.ascii	"int\000"
+ 277 0064 02       		.uleb128 0x2
+ 278 0065 04       		.byte	0x4
+ 279 0066 07       		.byte	0x7
+ 280 0067 4B010000 		.4byte	.LASF8
+ 281 006b 04       		.uleb128 0x4
+ 282 006c C1010000 		.4byte	.LASF9
+ 283 0070 02       		.byte	0x2
+ 284 0071 E401     		.2byte	0x1e4
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 10
+
+
+ 285 0073 2C000000 		.4byte	0x2c
+ 286 0077 04       		.uleb128 0x4
+ 287 0078 3B010000 		.4byte	.LASF10
+ 288 007c 02       		.byte	0x2
+ 289 007d E501     		.2byte	0x1e5
+ 290 007f 3A000000 		.4byte	0x3a
+ 291 0083 02       		.uleb128 0x2
+ 292 0084 04       		.byte	0x4
+ 293 0085 04       		.byte	0x4
+ 294 0086 38000000 		.4byte	.LASF11
+ 295 008a 02       		.uleb128 0x2
+ 296 008b 08       		.byte	0x8
+ 297 008c 04       		.byte	0x4
+ 298 008d 26010000 		.4byte	.LASF12
+ 299 0091 02       		.uleb128 0x2
+ 300 0092 01       		.byte	0x1
+ 301 0093 08       		.byte	0x8
+ 302 0094 B2010000 		.4byte	.LASF13
+ 303 0098 04       		.uleb128 0x4
+ 304 0099 DA000000 		.4byte	.LASF14
+ 305 009d 02       		.byte	0x2
+ 306 009e 8E02     		.2byte	0x28e
+ 307 00a0 A4000000 		.4byte	0xa4
+ 308 00a4 05       		.uleb128 0x5
+ 309 00a5 6B000000 		.4byte	0x6b
+ 310 00a9 06       		.uleb128 0x6
+ 311 00aa 00000000 		.4byte	.LASF15
+ 312 00ae 01       		.byte	0x1
+ 313 00af 39       		.byte	0x39
+ 314 00b0 00000000 		.4byte	.LFB0
+ 315 00b4 18000000 		.4byte	.LFE0-.LFB0
+ 316 00b8 01       		.uleb128 0x1
+ 317 00b9 9C       		.byte	0x9c
+ 318 00ba DB000000 		.4byte	0xdb
+ 319 00be 07       		.uleb128 0x7
+ 320 00bf 0F000000 		.4byte	.LASF17
+ 321 00c3 01       		.byte	0x1
+ 322 00c4 39       		.byte	0x39
+ 323 00c5 6B000000 		.4byte	0x6b
+ 324 00c9 00000000 		.4byte	.LLST0
+ 325 00cd 08       		.uleb128 0x8
+ 326 00ce 15000000 		.4byte	.LASF27
+ 327 00d2 01       		.byte	0x1
+ 328 00d3 3B       		.byte	0x3b
+ 329 00d4 6B000000 		.4byte	0x6b
+ 330 00d8 01       		.uleb128 0x1
+ 331 00d9 53       		.byte	0x53
+ 332 00da 00       		.byte	0
+ 333 00db 06       		.uleb128 0x6
+ 334 00dc 6F010000 		.4byte	.LASF16
+ 335 00e0 01       		.byte	0x1
+ 336 00e1 5A       		.byte	0x5a
+ 337 00e2 00000000 		.4byte	.LFB1
+ 338 00e6 30000000 		.4byte	.LFE1-.LFB1
+ 339 00ea 01       		.uleb128 0x1
+ 340 00eb 9C       		.byte	0x9c
+ 341 00ec 00010000 		.4byte	0x100
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 11
+
+
+ 342 00f0 07       		.uleb128 0x7
+ 343 00f1 85010000 		.4byte	.LASF18
+ 344 00f5 01       		.byte	0x1
+ 345 00f6 5A       		.byte	0x5a
+ 346 00f7 6B000000 		.4byte	0x6b
+ 347 00fb 21000000 		.4byte	.LLST1
+ 348 00ff 00       		.byte	0
+ 349 0100 09       		.uleb128 0x9
+ 350 0101 2D010000 		.4byte	.LASF19
+ 351 0105 01       		.byte	0x1
+ 352 0106 73       		.byte	0x73
+ 353 0107 6B000000 		.4byte	0x6b
+ 354 010b 00000000 		.4byte	.LFB2
+ 355 010f 10000000 		.4byte	.LFE2-.LFB2
+ 356 0113 01       		.uleb128 0x1
+ 357 0114 9C       		.byte	0x9c
+ 358 0115 09       		.uleb128 0x9
+ 359 0116 26020000 		.4byte	.LASF20
+ 360 011a 01       		.byte	0x1
+ 361 011b 8F       		.byte	0x8f
+ 362 011c 6B000000 		.4byte	0x6b
+ 363 0120 00000000 		.4byte	.LFB3
+ 364 0124 10000000 		.4byte	.LFE3-.LFB3
+ 365 0128 01       		.uleb128 0x1
+ 366 0129 9C       		.byte	0x9c
+ 367 012a 06       		.uleb128 0x6
+ 368 012b 8A010000 		.4byte	.LASF21
+ 369 012f 01       		.byte	0x1
+ 370 0130 BD       		.byte	0xbd
+ 371 0131 00000000 		.4byte	.LFB4
+ 372 0135 38000000 		.4byte	.LFE4-.LFB4
+ 373 0139 01       		.uleb128 0x1
+ 374 013a 9C       		.byte	0x9c
+ 375 013b 5E010000 		.4byte	0x15e
+ 376 013f 07       		.uleb128 0x7
+ 377 0140 42010000 		.4byte	.LASF22
+ 378 0144 01       		.byte	0x1
+ 379 0145 BD       		.byte	0xbd
+ 380 0146 77000000 		.4byte	0x77
+ 381 014a 42000000 		.4byte	.LLST2
+ 382 014e 07       		.uleb128 0x7
+ 383 014f 85010000 		.4byte	.LASF18
+ 384 0153 01       		.byte	0x1
+ 385 0154 BD       		.byte	0xbd
+ 386 0155 77000000 		.4byte	0x77
+ 387 0159 63000000 		.4byte	.LLST3
+ 388 015d 00       		.byte	0
+ 389 015e 09       		.uleb128 0x9
+ 390 015f 20000000 		.4byte	.LASF23
+ 391 0163 01       		.byte	0x1
+ 392 0164 E2       		.byte	0xe2
+ 393 0165 6B000000 		.4byte	0x6b
+ 394 0169 00000000 		.4byte	.LFB5
+ 395 016d 10000000 		.4byte	.LFE5-.LFB5
+ 396 0171 01       		.uleb128 0x1
+ 397 0172 9C       		.byte	0x9c
+ 398 0173 00       		.byte	0
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 12
+
+
+ 399              		.section	.debug_abbrev,"",%progbits
+ 400              	.Ldebug_abbrev0:
+ 401 0000 01       		.uleb128 0x1
+ 402 0001 11       		.uleb128 0x11
+ 403 0002 01       		.byte	0x1
+ 404 0003 25       		.uleb128 0x25
+ 405 0004 0E       		.uleb128 0xe
+ 406 0005 13       		.uleb128 0x13
+ 407 0006 0B       		.uleb128 0xb
+ 408 0007 03       		.uleb128 0x3
+ 409 0008 0E       		.uleb128 0xe
+ 410 0009 1B       		.uleb128 0x1b
+ 411 000a 0E       		.uleb128 0xe
+ 412 000b 55       		.uleb128 0x55
+ 413 000c 17       		.uleb128 0x17
+ 414 000d 11       		.uleb128 0x11
+ 415 000e 01       		.uleb128 0x1
+ 416 000f 10       		.uleb128 0x10
+ 417 0010 17       		.uleb128 0x17
+ 418 0011 00       		.byte	0
+ 419 0012 00       		.byte	0
+ 420 0013 02       		.uleb128 0x2
+ 421 0014 24       		.uleb128 0x24
+ 422 0015 00       		.byte	0
+ 423 0016 0B       		.uleb128 0xb
+ 424 0017 0B       		.uleb128 0xb
+ 425 0018 3E       		.uleb128 0x3e
+ 426 0019 0B       		.uleb128 0xb
+ 427 001a 03       		.uleb128 0x3
+ 428 001b 0E       		.uleb128 0xe
+ 429 001c 00       		.byte	0
+ 430 001d 00       		.byte	0
+ 431 001e 03       		.uleb128 0x3
+ 432 001f 24       		.uleb128 0x24
+ 433 0020 00       		.byte	0
+ 434 0021 0B       		.uleb128 0xb
+ 435 0022 0B       		.uleb128 0xb
+ 436 0023 3E       		.uleb128 0x3e
+ 437 0024 0B       		.uleb128 0xb
+ 438 0025 03       		.uleb128 0x3
+ 439 0026 08       		.uleb128 0x8
+ 440 0027 00       		.byte	0
+ 441 0028 00       		.byte	0
+ 442 0029 04       		.uleb128 0x4
+ 443 002a 16       		.uleb128 0x16
+ 444 002b 00       		.byte	0
+ 445 002c 03       		.uleb128 0x3
+ 446 002d 0E       		.uleb128 0xe
+ 447 002e 3A       		.uleb128 0x3a
+ 448 002f 0B       		.uleb128 0xb
+ 449 0030 3B       		.uleb128 0x3b
+ 450 0031 05       		.uleb128 0x5
+ 451 0032 49       		.uleb128 0x49
+ 452 0033 13       		.uleb128 0x13
+ 453 0034 00       		.byte	0
+ 454 0035 00       		.byte	0
+ 455 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 13
+
+
+ 456 0037 35       		.uleb128 0x35
+ 457 0038 00       		.byte	0
+ 458 0039 49       		.uleb128 0x49
+ 459 003a 13       		.uleb128 0x13
+ 460 003b 00       		.byte	0
+ 461 003c 00       		.byte	0
+ 462 003d 06       		.uleb128 0x6
+ 463 003e 2E       		.uleb128 0x2e
+ 464 003f 01       		.byte	0x1
+ 465 0040 3F       		.uleb128 0x3f
+ 466 0041 19       		.uleb128 0x19
+ 467 0042 03       		.uleb128 0x3
+ 468 0043 0E       		.uleb128 0xe
+ 469 0044 3A       		.uleb128 0x3a
+ 470 0045 0B       		.uleb128 0xb
+ 471 0046 3B       		.uleb128 0x3b
+ 472 0047 0B       		.uleb128 0xb
+ 473 0048 27       		.uleb128 0x27
+ 474 0049 19       		.uleb128 0x19
+ 475 004a 11       		.uleb128 0x11
+ 476 004b 01       		.uleb128 0x1
+ 477 004c 12       		.uleb128 0x12
+ 478 004d 06       		.uleb128 0x6
+ 479 004e 40       		.uleb128 0x40
+ 480 004f 18       		.uleb128 0x18
+ 481 0050 9742     		.uleb128 0x2117
+ 482 0052 19       		.uleb128 0x19
+ 483 0053 01       		.uleb128 0x1
+ 484 0054 13       		.uleb128 0x13
+ 485 0055 00       		.byte	0
+ 486 0056 00       		.byte	0
+ 487 0057 07       		.uleb128 0x7
+ 488 0058 05       		.uleb128 0x5
+ 489 0059 00       		.byte	0
+ 490 005a 03       		.uleb128 0x3
+ 491 005b 0E       		.uleb128 0xe
+ 492 005c 3A       		.uleb128 0x3a
+ 493 005d 0B       		.uleb128 0xb
+ 494 005e 3B       		.uleb128 0x3b
+ 495 005f 0B       		.uleb128 0xb
+ 496 0060 49       		.uleb128 0x49
+ 497 0061 13       		.uleb128 0x13
+ 498 0062 02       		.uleb128 0x2
+ 499 0063 17       		.uleb128 0x17
+ 500 0064 00       		.byte	0
+ 501 0065 00       		.byte	0
+ 502 0066 08       		.uleb128 0x8
+ 503 0067 34       		.uleb128 0x34
+ 504 0068 00       		.byte	0
+ 505 0069 03       		.uleb128 0x3
+ 506 006a 0E       		.uleb128 0xe
+ 507 006b 3A       		.uleb128 0x3a
+ 508 006c 0B       		.uleb128 0xb
+ 509 006d 3B       		.uleb128 0x3b
+ 510 006e 0B       		.uleb128 0xb
+ 511 006f 49       		.uleb128 0x49
+ 512 0070 13       		.uleb128 0x13
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 14
+
+
+ 513 0071 02       		.uleb128 0x2
+ 514 0072 18       		.uleb128 0x18
+ 515 0073 00       		.byte	0
+ 516 0074 00       		.byte	0
+ 517 0075 09       		.uleb128 0x9
+ 518 0076 2E       		.uleb128 0x2e
+ 519 0077 00       		.byte	0
+ 520 0078 3F       		.uleb128 0x3f
+ 521 0079 19       		.uleb128 0x19
+ 522 007a 03       		.uleb128 0x3
+ 523 007b 0E       		.uleb128 0xe
+ 524 007c 3A       		.uleb128 0x3a
+ 525 007d 0B       		.uleb128 0xb
+ 526 007e 3B       		.uleb128 0x3b
+ 527 007f 0B       		.uleb128 0xb
+ 528 0080 27       		.uleb128 0x27
+ 529 0081 19       		.uleb128 0x19
+ 530 0082 49       		.uleb128 0x49
+ 531 0083 13       		.uleb128 0x13
+ 532 0084 11       		.uleb128 0x11
+ 533 0085 01       		.uleb128 0x1
+ 534 0086 12       		.uleb128 0x12
+ 535 0087 06       		.uleb128 0x6
+ 536 0088 40       		.uleb128 0x40
+ 537 0089 18       		.uleb128 0x18
+ 538 008a 9742     		.uleb128 0x2117
+ 539 008c 19       		.uleb128 0x19
+ 540 008d 00       		.byte	0
+ 541 008e 00       		.byte	0
+ 542 008f 00       		.byte	0
+ 543              		.section	.debug_loc,"",%progbits
+ 544              	.Ldebug_loc0:
+ 545              	.LLST0:
+ 546 0000 00000000 		.4byte	.LVL0
+ 547 0004 0C000000 		.4byte	.LVL2
+ 548 0008 0100     		.2byte	0x1
+ 549 000a 50       		.byte	0x50
+ 550 000b 0C000000 		.4byte	.LVL2
+ 551 000f 18000000 		.4byte	.LFE0
+ 552 0013 0400     		.2byte	0x4
+ 553 0015 F3       		.byte	0xf3
+ 554 0016 01       		.uleb128 0x1
+ 555 0017 50       		.byte	0x50
+ 556 0018 9F       		.byte	0x9f
+ 557 0019 00000000 		.4byte	0
+ 558 001d 00000000 		.4byte	0
+ 559              	.LLST1:
+ 560 0021 00000000 		.4byte	.LVL3
+ 561 0025 08000000 		.4byte	.LVL4
+ 562 0029 0100     		.2byte	0x1
+ 563 002b 50       		.byte	0x50
+ 564 002c 08000000 		.4byte	.LVL4
+ 565 0030 30000000 		.4byte	.LFE1
+ 566 0034 0400     		.2byte	0x4
+ 567 0036 F3       		.byte	0xf3
+ 568 0037 01       		.uleb128 0x1
+ 569 0038 50       		.byte	0x50
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 15
+
+
+ 570 0039 9F       		.byte	0x9f
+ 571 003a 00000000 		.4byte	0
+ 572 003e 00000000 		.4byte	0
+ 573              	.LLST2:
+ 574 0042 00000000 		.4byte	.LVL5
+ 575 0046 1E000000 		.4byte	.LVL6
+ 576 004a 0100     		.2byte	0x1
+ 577 004c 50       		.byte	0x50
+ 578 004d 1E000000 		.4byte	.LVL6
+ 579 0051 38000000 		.4byte	.LFE4
+ 580 0055 0400     		.2byte	0x4
+ 581 0057 F3       		.byte	0xf3
+ 582 0058 01       		.uleb128 0x1
+ 583 0059 50       		.byte	0x50
+ 584 005a 9F       		.byte	0x9f
+ 585 005b 00000000 		.4byte	0
+ 586 005f 00000000 		.4byte	0
+ 587              	.LLST3:
+ 588 0063 00000000 		.4byte	.LVL5
+ 589 0067 24000000 		.4byte	.LVL7
+ 590 006b 0100     		.2byte	0x1
+ 591 006d 51       		.byte	0x51
+ 592 006e 24000000 		.4byte	.LVL7
+ 593 0072 38000000 		.4byte	.LFE4
+ 594 0076 0400     		.2byte	0x4
+ 595 0078 F3       		.byte	0xf3
+ 596 0079 01       		.uleb128 0x1
+ 597 007a 51       		.byte	0x51
+ 598 007b 9F       		.byte	0x9f
+ 599 007c 00000000 		.4byte	0
+ 600 0080 00000000 		.4byte	0
+ 601              		.section	.debug_aranges,"",%progbits
+ 602 0000 44000000 		.4byte	0x44
+ 603 0004 0200     		.2byte	0x2
+ 604 0006 00000000 		.4byte	.Ldebug_info0
+ 605 000a 04       		.byte	0x4
+ 606 000b 00       		.byte	0
+ 607 000c 0000     		.2byte	0
+ 608 000e 0000     		.2byte	0
+ 609 0010 00000000 		.4byte	.LFB0
+ 610 0014 18000000 		.4byte	.LFE0-.LFB0
+ 611 0018 00000000 		.4byte	.LFB1
+ 612 001c 30000000 		.4byte	.LFE1-.LFB1
+ 613 0020 00000000 		.4byte	.LFB2
+ 614 0024 10000000 		.4byte	.LFE2-.LFB2
+ 615 0028 00000000 		.4byte	.LFB3
+ 616 002c 10000000 		.4byte	.LFE3-.LFB3
+ 617 0030 00000000 		.4byte	.LFB4
+ 618 0034 38000000 		.4byte	.LFE4-.LFB4
+ 619 0038 00000000 		.4byte	.LFB5
+ 620 003c 10000000 		.4byte	.LFE5-.LFB5
+ 621 0040 00000000 		.4byte	0
+ 622 0044 00000000 		.4byte	0
+ 623              		.section	.debug_ranges,"",%progbits
+ 624              	.Ldebug_ranges0:
+ 625 0000 00000000 		.4byte	.LFB0
+ 626 0004 18000000 		.4byte	.LFE0
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 16
+
+
+ 627 0008 00000000 		.4byte	.LFB1
+ 628 000c 30000000 		.4byte	.LFE1
+ 629 0010 00000000 		.4byte	.LFB2
+ 630 0014 10000000 		.4byte	.LFE2
+ 631 0018 00000000 		.4byte	.LFB3
+ 632 001c 10000000 		.4byte	.LFE3
+ 633 0020 00000000 		.4byte	.LFB4
+ 634 0024 38000000 		.4byte	.LFE4
+ 635 0028 00000000 		.4byte	.LFB5
+ 636 002c 10000000 		.4byte	.LFE5
+ 637 0030 00000000 		.4byte	0
+ 638 0034 00000000 		.4byte	0
+ 639              		.section	.debug_line,"",%progbits
+ 640              	.Ldebug_line0:
+ 641 0000 BB000000 		.section	.debug_str,"MS",%progbits,1
+ 641      02004500 
+ 641      00000201 
+ 641      FB0E0D00 
+ 641      01010101 
+ 642              	.LASF15:
+ 643 0000 436F6C75 		.ascii	"Columnas_Write\000"
+ 643      6D6E6173 
+ 643      5F577269 
+ 643      746500
+ 644              	.LASF17:
+ 645 000f 76616C75 		.ascii	"value\000"
+ 645      6500
+ 646              	.LASF27:
+ 647 0015 73746174 		.ascii	"staticBits\000"
+ 647      69634269 
+ 647      747300
+ 648              	.LASF23:
+ 649 0020 436F6C75 		.ascii	"Columnas_ClearInterrupt\000"
+ 649      6D6E6173 
+ 649      5F436C65 
+ 649      6172496E 
+ 649      74657272 
+ 650              	.LASF11:
+ 651 0038 666C6F61 		.ascii	"float\000"
+ 651      7400
+ 652              	.LASF1:
+ 653 003e 756E7369 		.ascii	"unsigned char\000"
+ 653      676E6564 
+ 653      20636861 
+ 653      7200
+ 654              	.LASF24:
+ 655 004c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 655      43313120 
+ 655      352E342E 
+ 655      31203230 
+ 655      31363036 
+ 656 007f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 656      20726576 
+ 656      6973696F 
+ 656      6E203233 
+ 656      37373135 
+ 657 00b2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 17
+
+
+ 657      66756E63 
+ 657      74696F6E 
+ 657      2D736563 
+ 657      74696F6E 
+ 658              	.LASF14:
+ 659 00da 72656738 		.ascii	"reg8\000"
+ 659      00
+ 660              	.LASF5:
+ 661 00df 6C6F6E67 		.ascii	"long unsigned int\000"
+ 661      20756E73 
+ 661      69676E65 
+ 661      6420696E 
+ 661      7400
+ 662              	.LASF3:
+ 663 00f1 73686F72 		.ascii	"short unsigned int\000"
+ 663      7420756E 
+ 663      7369676E 
+ 663      65642069 
+ 663      6E7400
+ 664              	.LASF25:
+ 665 0104 47656E65 		.ascii	"Generated_Source\\PSoC5\\Columnas.c\000"
+ 665      72617465 
+ 665      645F536F 
+ 665      75726365 
+ 665      5C50536F 
+ 666              	.LASF12:
+ 667 0126 646F7562 		.ascii	"double\000"
+ 667      6C6500
+ 668              	.LASF19:
+ 669 012d 436F6C75 		.ascii	"Columnas_Read\000"
+ 669      6D6E6173 
+ 669      5F526561 
+ 669      6400
+ 670              	.LASF10:
+ 671 013b 75696E74 		.ascii	"uint16\000"
+ 671      313600
+ 672              	.LASF22:
+ 673 0142 706F7369 		.ascii	"position\000"
+ 673      74696F6E 
+ 673      00
+ 674              	.LASF8:
+ 675 014b 756E7369 		.ascii	"unsigned int\000"
+ 675      676E6564 
+ 675      20696E74 
+ 675      00
+ 676              	.LASF7:
+ 677 0158 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 677      206C6F6E 
+ 677      6720756E 
+ 677      7369676E 
+ 677      65642069 
+ 678              	.LASF16:
+ 679 016f 436F6C75 		.ascii	"Columnas_SetDriveMode\000"
+ 679      6D6E6173 
+ 679      5F536574 
+ 679      44726976 
+ 679      654D6F64 
+ARM GAS  C:\Users\s_bej\AppData\Local\Temp\cc8jcMqn.s 			page 18
+
+
+ 680              	.LASF18:
+ 681 0185 6D6F6465 		.ascii	"mode\000"
+ 681      00
+ 682              	.LASF21:
+ 683 018a 436F6C75 		.ascii	"Columnas_SetInterruptMode\000"
+ 683      6D6E6173 
+ 683      5F536574 
+ 683      496E7465 
+ 683      72727570 
+ 684              	.LASF6:
+ 685 01a4 6C6F6E67 		.ascii	"long long int\000"
+ 685      206C6F6E 
+ 685      6720696E 
+ 685      7400
+ 686              	.LASF13:
+ 687 01b2 63686172 		.ascii	"char\000"
+ 687      00
+ 688              	.LASF2:
+ 689 01b7 73686F72 		.ascii	"short int\000"
+ 689      7420696E 
+ 689      7400
+ 690              	.LASF9:
+ 691 01c1 75696E74 		.ascii	"uint8\000"
+ 691      3800
+ 692              	.LASF26:
+ 693 01c7 433A5C43 		.ascii	"C:\\Cosas Otro PC\\Universidad\\Noveno Semestre\\Si"
+ 693      6F736173 
+ 693      204F7472 
+ 693      6F205043 
+ 693      5C556E69 
+ 694 01f6 7374656D 		.ascii	"stemas Embebidos\\Proy3_1\\Proy3_1.cydsn\000"
+ 694      61732045 
+ 694      6D626562 
+ 694      69646F73 
+ 694      5C50726F 
+ 695              	.LASF4:
+ 696 021d 6C6F6E67 		.ascii	"long int\000"
+ 696      20696E74 
+ 696      00
+ 697              	.LASF20:
+ 698 0226 436F6C75 		.ascii	"Columnas_ReadDataReg\000"
+ 698      6D6E6173 
+ 698      5F526561 
+ 698      64446174 
+ 698      61526567 
+ 699              	.LASF0:
+ 700 023b 7369676E 		.ascii	"signed char\000"
+ 700      65642063 
+ 700      68617200 
+ 701              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

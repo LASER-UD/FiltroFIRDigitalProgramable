@@ -1,0 +1,90 @@
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC_IRQ.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC_theACLK.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CYDMAC.H C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CYFITTER.H C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Columnas.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Columnas_aliases.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CyLib.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CySpc.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_DMA_dma.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_IntClock.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_VDAC8.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Entrada.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Entrada_aliases.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Filas.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Filas_aliases.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Muestreo.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Recorre_Uno.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Salida.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Salida_aliases.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cyPm.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydevice.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cypins.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cytypes.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_CambioUno.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_EndOfConv.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_TeclaOprimida.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/project.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/timer_clock.h C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/main.c 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC_IRQ.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/ADC_theACLK.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CYDMAC.H : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CYFITTER.H : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Columnas.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Columnas_aliases.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_DMA_dma.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_IntClock.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/DAC_VDAC8.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Entrada.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Entrada_aliases.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Filas.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Filas_aliases.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Muestreo.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Recorre_Uno.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Salida.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/Salida_aliases.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_CambioUno.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_EndOfConv.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/int_TeclaOprimida.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/Generated_Source/PSoC5/timer_clock.h : 
+
+C:/Cosas\ Otro\ PC/Universidad/Noveno\ Semestre/Sistemas\ Embebidos/Proy3_1/Proy3_1.cydsn/main.c : 
+
