@@ -1,59 +1,111 @@
 /*******************************************************************************
-* File Name: DAC_PM.c
-* Version 2.10
+* File Name: DAC_PM.c  
+* Version 1.90
 *
 * Description:
-*  This file provides the power management source code to the API for the
-*  DVDAC component.
+*  This file provides the power management source code to API for the
+*  VDAC8.  
 *
+* Note:
+*  None
 *
 ********************************************************************************
-* Copyright 2013, Cypress Semiconductor Corporation. All rights reserved.
-* You may use this file only in accordance with the license, terms, conditions,
-* disclaimers, and limitations in the end user license agreement accompanying
+* Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+* You may use this file only in accordance with the license, terms, conditions, 
+* disclaimers, and limitations in the end user license agreement accompanying 
 * the software package with which this file was provided.
 *******************************************************************************/
 
 #include "DAC.h"
-#include "DAC_VDAC8.h"
 
-static DAC_BACKUP_STRUCT  DAC_backup;
+static DAC_backupStruct DAC_backup;
+
+
+/*******************************************************************************
+* Function Name: DAC_SaveConfig
+********************************************************************************
+* Summary:
+*  Save the current user configuration
+*
+* Parameters:  
+*  void  
+*
+* Return: 
+*  void
+*
+*******************************************************************************/
+void DAC_SaveConfig(void) 
+{
+    if (!((DAC_CR1 & DAC_SRC_MASK) == DAC_SRC_UDB))
+    {
+        DAC_backup.data_value = DAC_Data;
+    }
+}
+
+
+/*******************************************************************************
+* Function Name: DAC_RestoreConfig
+********************************************************************************
+*
+* Summary:
+*  Restores the current user configuration.
+*
+* Parameters:  
+*  void
+*
+* Return: 
+*  void
+*
+*******************************************************************************/
+void DAC_RestoreConfig(void) 
+{
+    if (!((DAC_CR1 & DAC_SRC_MASK) == DAC_SRC_UDB))
+    {
+        if((DAC_Strobe & DAC_STRB_MASK) == DAC_STRB_EN)
+        {
+            DAC_Strobe &= (uint8)(~DAC_STRB_MASK);
+            DAC_Data = DAC_backup.data_value;
+            DAC_Strobe |= DAC_STRB_EN;
+        }
+        else
+        {
+            DAC_Data = DAC_backup.data_value;
+        }
+    }
+}
 
 
 /*******************************************************************************
 * Function Name: DAC_Sleep
 ********************************************************************************
-*
 * Summary:
-*  This is the preferred API to prepare the component for sleep. The
-*  DAC_Sleep() API saves the current component state. Then it
-*  calls the DAC_Stop() function and calls
-*  DAC_SaveConfig() to save the hardware configuration. Call the
-*  DAC_Sleep() function before calling the CyPmSleep() or the
-*  CyPmHibernate() function.
+*  Stop and Save the user configuration
 *
-* Parameters:
-*  None
+* Parameters:  
+*  void:  
 *
-* Return:
-*  None
+* Return: 
+*  void
 *
 * Global variables:
-*  None
+*  DAC_backup.enableState:  Is modified depending on the enable 
+*  state  of the block before entering sleep mode.
 *
 *******************************************************************************/
 void DAC_Sleep(void) 
 {
-    /* Save VDAC8's enable state */
-    if(0u != (DAC_VDAC8_PWRMGR & DAC_VDAC8_ACT_PWR_EN))
+    /* Save VDAC8's enable state */    
+    if(DAC_ACT_PWR_EN == (DAC_PWRMGR & DAC_ACT_PWR_EN))
     {
+        /* VDAC8 is enabled */
         DAC_backup.enableState = 1u;
     }
     else
     {
+        /* VDAC8 is disabled */
         DAC_backup.enableState = 0u;
     }
-
+    
     DAC_Stop();
     DAC_SaveConfig();
 }
@@ -64,79 +116,31 @@ void DAC_Sleep(void)
 ********************************************************************************
 *
 * Summary:
-*  This is the preferred API to restore the component to the state when
-*  DAC_Sleep() was called. The DAC_Wakeup() function
-*  calls the DAC_RestoreConfig() function to restore the
-*  configuration. If the component was enabled before the
-*  DAC_Sleep() function was called, the DVDAC_Wakeup() function
-*  will also re-enable the component.
+*  Restores and enables the user configuration
+*  
+* Parameters:  
+*  void
 *
-* Parameters:
-*  None
-*
-* Return:
-*  None
+* Return: 
+*  void
 *
 * Global variables:
-*  None
+*  DAC_backup.enableState:  Is used to restore the enable state of 
+*  block on wakeup from sleep mode.
 *
 *******************************************************************************/
 void DAC_Wakeup(void) 
 {
     DAC_RestoreConfig();
-
+    
     if(DAC_backup.enableState == 1u)
     {
+        /* Enable VDAC8's operation */
         DAC_Enable();
-    }
-}
 
-
-/*******************************************************************************
-* Function Name: DAC_SaveConfig
-********************************************************************************
-*
-* Summary:
-*  This function saves the component configuration and non-retention registers.
-*  This function is called by the DAC_Sleep() function.
-*
-* Parameters:
-*  None
-*
-* Return:
-*  None
-*
-* Global variables:
-*  None
-*
-*******************************************************************************/
-void DAC_SaveConfig(void) 
-{
-    DAC_VDAC8_SaveConfig();
-}
-
-
-/*******************************************************************************
-* Function Name: DAC_RestoreConfig
-********************************************************************************
-*
-* Summary:
-*  This function restores the component configuration and non-retention
-*  registers. This function is called by the DAC_Wakeup() function.
-*
-* Parameters:
-*  None
-*
-* Return:
-*  None
-*
-* Global variables:
-*  None
-*
-*******************************************************************************/
-void DAC_RestoreConfig(void) 
-{
-    DAC_VDAC8_RestoreConfig();
+        /* Restore the data register */
+        DAC_SetValue(DAC_Data);
+    } /* Do nothing if VDAC8 was disabled before */    
 }
 
 

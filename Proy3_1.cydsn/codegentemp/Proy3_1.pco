@@ -1,5 +1,5 @@
 # Proy3_1
-# 2018-10-03 21:29:15Z
+# 2019-06-10 18:21:49Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -8,36 +8,15 @@ dont_use_io iocell 1 1
 # IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 3
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_location "Columnas" logicalport -1 -1 2
-set_io "Columnas(0)" iocell 2 0
-set_io "Columnas(1)" iocell 2 1
-set_io "Columnas(2)" iocell 2 2
-set_io "Filas(0)" iocell 0 0
-set_io "Filas(1)" iocell 0 1
-set_io "Filas(2)" iocell 0 2
-set_io "Filas(3)" iocell 0 3
-set_io "\LCD:LCDPort(0)\" iocell 12 0
-set_io "\LCD:LCDPort(1)\" iocell 12 1
-set_io "\LCD:LCDPort(2)\" iocell 12 2
-set_io "\LCD:LCDPort(3)\" iocell 12 3
-set_io "\LCD:LCDPort(4)\" iocell 12 4
-set_io "\LCD:LCDPort(5)\" iocell 12 5
-set_io "\LCD:LCDPort(6)\" iocell 12 6
-set_io "Entrada(0)" iocell 1 7
+set_location "SW" logicalport -1 -1 2
+set_io "SW(0)" iocell 2 2
+set_io "Pin_ADC(0)" iocell 1 7
 set_io "Salida(0)" iocell 3 1
-set_location "\Recorre_Uno:TimerUDB:status_tc\" 1 4 0 1
-set_location "\Muestreo:TimerHW\" timercell -1 -1 0
-set_location "__ONE__" 2 4 0 3
-set_location "\ADC:IRQ\" interrupt -1 -1 0
+set_io "LEDS(0)" iocell 2 1
+set_location "ISR" interrupt -1 -1 0
+set_location "\Timer:TimerHW\" timercell -1 -1 0
+set_location "__ONE__" 1 3 0 0
+set_location "\DAC:viDAC8\" vidaccell -1 -1 3
+set_location "\ADC:IRQ\" interrupt -1 -1 1
 set_location "\ADC:ADC_SAR\" sarcell -1 -1 1
-set_location "\DAC:DMA\" drqcell -1 -1 0
-set_location "\DAC:VDAC8:viDAC8\" vidaccell -1 -1 3
-set_location "int_EndOfConv" interrupt -1 -1 2
-set_location "int_TeclaOprimida" interrupt -1 -1 3
-set_location "\Recorre_Uno:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 3 6
-set_location "\Recorre_Uno:TimerUDB:rstSts:stsreg\" 1 4 4
-set_location "\Recorre_Uno:TimerUDB:sT24:timerdp:u0\" 0 3 2
-set_location "\Recorre_Uno:TimerUDB:sT24:timerdp:u1\" 1 3 2
-set_location "\Recorre_Uno:TimerUDB:sT24:timerdp:u2\" 1 4 2
-set_location "int_CambioUno" interrupt -1 -1 1
-set_location "Net_54" 1 4 0 0
+set_location "ISR_1" interrupt -1 -1 6

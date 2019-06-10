@@ -130,9 +130,9 @@
         <Data key="clock_version" value="v1" />
         <Data key="derive_type" value="BUILTIN" />
         <Data key="desired_freq" value="0" />
-        <Data key="desired_unit" value="0" />
+        <Data key="desired_unit" value="15" />
         <Data key="divider" value="0" />
-        <Data key="domain" value="DIGITAL" />
+        <Data key="domain" value="0" />
         <Data key="enabled" value="False" />
         <Data key="minus_accuracy" value="0" />
         <Data key="minus_tolerance" value="0" />
@@ -378,10 +378,10 @@
     </Group>
     <Group key="Pin">
       <Data key="3f79333e-b1c1-45cc-93a9-48079382e27b/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
-      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="Columnas" />
+      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="SW" />
       <Data key="91cd31a7-36c1-4f80-8357-da335805490d" value="Salida" />
-      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Entrada" />
-      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Filas" />
+      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Pin_ADC" />
+      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="LEDS" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3493,7 +3493,7 @@
     </Group>
     <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
       <Group key="0">
-        <Data key="Port Format" value="2,0" />
+        <Data key="Port Format" value="2,2" />
       </Group>
       <Group key="1">
         <Data key="Port Format" value="2,1" />
@@ -3514,7 +3514,7 @@
     </Group>
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
       <Group key="0">
-        <Data key="Port Format" value="0,0" />
+        <Data key="Port Format" value="2,1" />
       </Group>
       <Group key="1">
         <Data key="Port Format" value="0,1" />

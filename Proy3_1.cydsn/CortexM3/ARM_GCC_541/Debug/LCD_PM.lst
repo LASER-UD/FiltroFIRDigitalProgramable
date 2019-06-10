@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
   28:Generated_Source\PSoC5/LCD_PM.c **** *  Does nothing, provided for consistency.
   29:Generated_Source\PSoC5/LCD_PM.c **** *
   30:Generated_Source\PSoC5/LCD_PM.c **** * Parameters:
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 2
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 2
 
 
   31:Generated_Source\PSoC5/LCD_PM.c **** *  None.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
   55              		.align	2
   56              		.global	LCD_Sleep
   57              		.thumb
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 3
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 3
 
 
   58              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
   87              		.size	LCD_Sleep, .-LCD_Sleep
   88              		.section	.text.LCD_Wakeup,"ax",%progbits
   89              		.align	2
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 4
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 4
 
 
   90              		.global	LCD_Wakeup
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  113 000e 08BD     		pop	{r3, pc}
  114              	.L11:
  115              		.align	2
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 5
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 5
 
 
  116              	.L10:
@@ -274,7 +274,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  146 0025 02       		.uleb128 0x2
  147 0026 01       		.byte	0x1
  148 0027 06       		.byte	0x6
- 149 0028 0C020000 		.4byte	.LASF0
+ 149 0028 06020000 		.4byte	.LASF0
  150 002c 02       		.uleb128 0x2
  151 002d 01       		.byte	0x1
  152 002e 08       		.byte	0x8
@@ -290,7 +290,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  162 0041 02       		.uleb128 0x2
  163 0042 04       		.byte	0x4
  164 0043 05       		.byte	0x5
- 165 0044 F7010000 		.4byte	.LASF4
+ 165 0044 F1010000 		.4byte	.LASF4
  166 0048 02       		.uleb128 0x2
  167 0049 04       		.byte	0x4
  168 004a 07       		.byte	0x7
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  170 004f 02       		.uleb128 0x2
  171 0050 08       		.byte	0x8
  172 0051 05       		.byte	0x5
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 6
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 6
 
 
  173 0052 61010000 		.4byte	.LASF6
@@ -337,7 +337,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  206 008f 2C       		.byte	0x2c
  207 0090 A1000000 		.4byte	0xa1
  208 0094 06       		.uleb128 0x6
- 209 0095 00020000 		.4byte	.LASF23
+ 209 0095 FA010000 		.4byte	.LASF23
  210 0099 03       		.byte	0x3
  211 009a 2E       		.byte	0x2e
  212 009b 6B000000 		.4byte	0x6b
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  227 00bc 9C       		.byte	0x9c
  228 00bd 08       		.uleb128 0x8
  229 00be 2B010000 		.4byte	.LASF15
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 7
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 7
 
 
  230 00c2 01       		.byte	0x1
@@ -381,7 +381,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  247 00e8 28010000 		.4byte	0x128
  248 00ec 00       		.byte	0
  249 00ed 09       		.uleb128 0x9
- 250 00ee 18020000 		.4byte	.LASF17
+ 250 00ee 12020000 		.4byte	.LASF17
  251 00f2 01       		.byte	0x1
  252 00f3 6B       		.byte	0x6b
  253 00f4 00000000 		.4byte	.LFB3
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  284 013d 37       		.byte	0x37
  285 013e 00       		.byte	0
  286              		.section	.debug_abbrev,"",%progbits
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 8
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 8
 
 
  287              	.Ldebug_abbrev0:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  341 0035 00       		.byte	0
  342 0036 05       		.uleb128 0x5
  343 0037 13       		.uleb128 0x13
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 9
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 9
 
 
  344 0038 01       		.byte	0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  398 006e 12       		.uleb128 0x12
  399 006f 06       		.uleb128 0x6
  400 0070 40       		.uleb128 0x40
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 10
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 10
 
 
  401 0071 18       		.uleb128 0x18
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  455 00ab 0C       		.uleb128 0xc
  456 00ac 34       		.uleb128 0x34
  457 00ad 00       		.byte	0
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 11
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 11
 
 
  458 00ae 03       		.uleb128 0x3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  512 0008 00000000 		.4byte	.LFB1
  513 000c 02000000 		.4byte	.LFE1
  514 0010 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 12
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 12
 
 
  515 0014 18000000 		.4byte	.LFE2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  539      37373135 
  540 00cc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  540      66756E63 
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 13
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 13
 
 
  540      74696F6E 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  562 0186 73686F72 		.ascii	"short int\000"
  562      7420696E 
  562      7400
-ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 14
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccKcNzQs.s 			page 14
 
 
  563              	.LASF12:
@@ -789,30 +789,30 @@ ARM GAS  C:\Users\s_bej\AppData\Local\Temp\ccv7gaTD.s 			page 1
  566      6261636B 
  566      757000
  567              	.LASF22:
- 568 01a1 433A5C43 		.ascii	"C:\\Cosas Otro PC\\Universidad\\Noveno Semestre\\Si"
- 568      6F736173 
- 568      204F7472 
- 568      6F205043 
- 568      5C556E69 
- 569 01d0 7374656D 		.ascii	"stemas Embebidos\\Proy3_1\\Proy3_1.cydsn\000"
- 569      61732045 
- 569      6D626562 
- 569      69646F73 
- 569      5C50726F 
+ 568 01a1 433A5C55 		.ascii	"C:\\Users\\nikod\\Documents\\PSoC Creator\\FiltroFI"
+ 568      73657273 
+ 568      5C6E696B 
+ 568      6F645C44 
+ 568      6F63756D 
+ 569 01cf 52446967 		.ascii	"RDigitalProgramable\\Proy3_1.cydsn\000"
+ 569      6974616C 
+ 569      50726F67 
+ 569      72616D61 
+ 569      626C655C 
  570              	.LASF4:
- 571 01f7 6C6F6E67 		.ascii	"long int\000"
+ 571 01f1 6C6F6E67 		.ascii	"long int\000"
  571      20696E74 
  571      00
  572              	.LASF23:
- 573 0200 656E6162 		.ascii	"enableState\000"
+ 573 01fa 656E6162 		.ascii	"enableState\000"
  573      6C655374 
  573      61746500 
  574              	.LASF0:
- 575 020c 7369676E 		.ascii	"signed char\000"
+ 575 0206 7369676E 		.ascii	"signed char\000"
  575      65642063 
  575      68617200 
  576              	.LASF17:
- 577 0218 4C43445F 		.ascii	"LCD_Wakeup\000"
+ 577 0212 4C43445F 		.ascii	"LCD_Wakeup\000"
  577      57616B65 
  577      757000
  578              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
