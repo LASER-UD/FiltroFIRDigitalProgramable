@@ -129,35 +129,6 @@
 <VisibleNodeIds>
 <v>Proy3_1</v>
 <v>Proy3_1\Proy3_1</v>
-<v>Proy3_1\Proy3_1\CortexM3</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_PM.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_1.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDS.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_ADC.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\Salida.lst</v>
-<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\SW.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
