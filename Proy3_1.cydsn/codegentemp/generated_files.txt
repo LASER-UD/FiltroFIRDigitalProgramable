@@ -46,10 +46,16 @@
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LEDS.h" value="HEADER;;;;;LEDS" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ISR_1.c" value="SOURCE_C;CortexM3;;;;ISR_1" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ISR_1.h" value="HEADER;;;;;ISR_1" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD.c" value="SOURCE_C;CortexM3;;;;LCD" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD.h" value="HEADER;;;;;LCD" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD_PM.c" value="SOURCE_C;CortexM3;;;;LCD" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_IRQ" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_IRQ.h" value="HEADER;;;;;ADC_IRQ" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_theACLK" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_theACLK.h" value="HEADER;;;;;ADC_theACLK" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD_LCDPort_aliases.h" value="HEADER;;;;;LCD_LCDPort" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD_LCDPort.c" value="SOURCE_C;CortexM3;;;;LCD_LCDPort" />
+  <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\LCD_LCDPort.h" value="HEADER;;;;;LCD_LCDPort" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

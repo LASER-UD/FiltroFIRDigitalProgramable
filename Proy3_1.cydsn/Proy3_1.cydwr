@@ -379,9 +379,11 @@
     <Group key="Pin">
       <Data key="3f79333e-b1c1-45cc-93a9-48079382e27b/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="SW" />
+      <Data key="72b0f3e8-705c-46ab-bddc-c4bbdc86b434/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="91cd31a7-36c1-4f80-8357-da335805490d" value="Salida" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Pin_ADC" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="LEDS" />
+      <Data key="f264aac4-58aa-479c-ad60-99ef248e1a2d" value="PWMdir" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3502,6 +3504,29 @@
         <Data key="Port Format" value="2,2" />
       </Group>
     </Group>
+    <Group key="72b0f3e8-705c-46ab-bddc-c4bbdc86b434/ed092b9b-d398-4703-be89-cebf998501f6">
+      <Group key="0">
+        <Data key="Port Format" value="12,0" />
+      </Group>
+      <Group key="1">
+        <Data key="Port Format" value="12,1" />
+      </Group>
+      <Group key="2">
+        <Data key="Port Format" value="12,2" />
+      </Group>
+      <Group key="3">
+        <Data key="Port Format" value="12,3" />
+      </Group>
+      <Group key="4">
+        <Data key="Port Format" value="12,4" />
+      </Group>
+      <Group key="5">
+        <Data key="Port Format" value="12,5" />
+      </Group>
+      <Group key="6">
+        <Data key="Port Format" value="12,6" />
+      </Group>
+    </Group>
     <Group key="91cd31a7-36c1-4f80-8357-da335805490d">
       <Group key="0">
         <Data key="Port Format" value="3,1" />
@@ -3524,6 +3549,11 @@
       </Group>
       <Group key="3">
         <Data key="Port Format" value="0,3" />
+      </Group>
+    </Group>
+    <Group key="f264aac4-58aa-479c-ad60-99ef248e1a2d">
+      <Group key="0">
+        <Data key="Port Format" value="2,3" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />

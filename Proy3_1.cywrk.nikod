@@ -63,10 +63,10 @@
 <v>Proy3_1\Proy3_1\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
 <v>Proy3_1\Proy3_1\Generated_Source\PSoC5\ISR</v>
 <v>Proy3_1\Proy3_1\Generated_Source\PSoC5\ISR_1</v>
+<v>Proy3_1\Proy3_1\Generated_Source\PSoC5\LCD</v>
+<v>Proy3_1\Proy3_1\Generated_Source\PSoC5\LCD_LCDPort</v>
 <v>Proy3_1\Proy3_1\Generated_Source\PSoC5\LEDS</v>
 <v>Proy3_1\Proy3_1\Generated_Source\PSoC5\Pin_ADC</v>
-<v>Proy3_1\Proy3_1\Generated_Source\PSoC5\Salida</v>
-<v>Proy3_1\Proy3_1\Generated_Source\PSoC5\SW</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -111,6 +111,9 @@
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_PM.lst</v>
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_1.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDS.lst</v>
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_ADC.lst</v>
@@ -129,6 +132,35 @@
 <VisibleNodeIds>
 <v>Proy3_1</v>
 <v>Proy3_1\Proy3_1</v>
+<v>Proy3_1\Proy3_1\CortexM3</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_PM.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_1.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\LEDS.lst</v>
+<v>Proy3_1\Proy3_1\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -145,6 +177,7 @@
 <v>Proy3_1\Proy3_1\System Reference Guides</v>
 <v>Proy3_1\Proy3_1\System Reference Guides\cy_boot_v5_70</v>
 <v>Proy3_1\Proy3_1\ADC_SAR_v3_10.pdf</v>
+<v>Proy3_1\Proy3_1\CharLCD_v2_20.pdf</v>
 <v>Proy3_1\Proy3_1\cy_clock_v2_20.pdf</v>
 <v>Proy3_1\Proy3_1\cy_isr_v1_70</v>
 <v>Proy3_1\Proy3_1\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
@@ -162,6 +195,7 @@
 <v>Proy3_1\Proy3_1\System Reference Guides</v>
 <v>Proy3_1\Proy3_1\System Reference Guides\cy_boot_v5_70</v>
 <v>Proy3_1\Proy3_1\ADC_SAR_v3_10.pdf</v>
+<v>Proy3_1\Proy3_1\CharLCD_v2_20.pdf</v>
 <v>Proy3_1\Proy3_1\cy_clock_v2_20.pdf</v>
 <v>Proy3_1\Proy3_1\cy_isr_v1_70</v>
 <v>Proy3_1\Proy3_1\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
@@ -189,7 +223,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1156, 363" SelectedTabbedMdiWindow="2c86694d-3936-437f-9f36-6e34341b5c39"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4135072b-1754-4e5d-9fa2-a5f92d2695ae" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\main.c" Guid="2c86694d-3936-437f-9f36-6e34341b5c39" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\TopDesign\TopDesign.cysch" Guid="c7ef03fb-0753-40e1-9da6-c9e8fe62c1b0" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\Proy3_1.cydwr" Guid="b070d145-954f-41d0-aeb6-2c57a23e0f6a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1156, 363" SelectedTabbedMdiWindow="b070d145-954f-41d0-aeb6-2c57a23e0f6a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4135072b-1754-4e5d-9fa2-a5f92d2695ae" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\main.c" Guid="2c86694d-3936-437f-9f36-6e34341b5c39" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\TopDesign\TopDesign.cysch" Guid="c7ef03fb-0753-40e1-9da6-c9e8fe62c1b0" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\Proy3_1.cydwr" Guid="b070d145-954f-41d0-aeb6-2c57a23e0f6a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
