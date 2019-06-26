@@ -1,6 +1,6 @@
-C:\Users\nikod\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\Proy3_1.cyprj|d459ddb3-9bd5-4b91-96ae-5ef198ea1a97
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a070a7c5-b3ca-442f-af85-0b4b130c29bf
-C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|5d4bb548-51da-4f8f-ab9a-46082071cbfa
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a4a903c7-0bf2-43d5-ab5e-a6c19045b7e3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f78b1730-f5dc-4e7c-9988-ddfc2bc41351
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|50474ece-cb59-46e7-9cd2-6f90f59fe3a3
+C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\Proy3_1.cyprj|28d6a70e-0c69-47e0-b26e-81beab5b37b1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|51028ecd-590e-4f2a-a2c0-39262884423d
+C:\Users\LASER_2\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|43046e31-a302-420d-a88a-60fd4780d74b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ee7bb720-4d0e-419b-a3ef-55be62dfab7a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f1e7452d-a98b-47b3-b479-ae91c7bf0a20
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ed6c8c18-cb45-4930-8faa-170729f15e65

@@ -25,6 +25,7 @@ uint16 x[51];
 
 
 CY_ISR(INT_SW){
+    LEDS_Write(~LEDS_Read());
     if(cont==3){
         cont=0;
     }else{
@@ -229,9 +230,13 @@ CY_ISR(llegaMuestra)
     ADC_StartConvert();
     ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
     x[0] = ADC_GetResult16();
-    y = (x[0]*w[0]+x[1]*w[1]+x[2]*h[2]+x[3]*w[3]+x[4]*w[4]+x[5]*w[5]+x[6]*w[6]+x[7]*w[7]+x[8]*w[8]+x[9]*w[9]+x[10]*w[10]+x[11]*w[11]+x[12]*w[12]+x[13]*h[13]+x[14]*w[14]+x[15]*w[15]+x[16]*w[16]+x[17]*w[17]+x[18]*w[18]+x[19]*w[19]+x[20]*w[20]+x[21]*w[21]+x[22]*w[22]+x[23]*w[23]+x[24]*w[24]+x[25]*w[25]+x[26]*w[26]+x[27]*w[27]+x[28]*w[28]+x[29]*w[29]+x[30]*w[30]+x[31]*w[31]+x[32]*w[32]+x[33]*w[33]+x[34]*w[34]+x[35]*w[35]+x[36]*w[36]+x[37]*w[37]+x[38]*w[38]+x[39]*w[39]+x[40]*w[40]+x[41]*w[41]+x[42]*w[42]+x[43]*w[43]+x[44]*w[44]+x[45]*w[45]+x[46]*w[46]+x[47]*w[47]+x[48]*w[48]+x[49]*w[49]+x[50]*w[50])+108;
-}   
-DAC_SetValue(y);
+    y = (x[0]*w[0]+x[1]*w[1]+x[2]*h[2]+x[3]*w[3]+x[4]*w[4]+x[5]*w[5]+x[6]*w[6]+x[7]*w[7]+x[8]*w[8]+x[9]*w[9]+x[10]*w[10]+x[11]*w[11]+x[12]*w[12]+x[13]*h[13]+x[14]*w[14]+x[15]*w[15]+x[16]*w[16]+x[17]*w[17]+x[18]*w[18]+x[19]*w[19]+x[20]*w[20]+x[21]*w[21]+x[22]*w[22]+x[23]*w[23]+x[24]*w[24]+x[25]*w[25]+x[26]*w[26]+x[27]*w[27]+x[28]*w[28]+x[29]*w[29]+x[30]*w[30]+x[31]*w[31]+x[32]*w[32]+x[33]*w[33]+x[34]*w[34]+x[35]*w[35]+x[36]*w[36]+x[37]*w[37]+x[38]*w[38]+x[39]*w[39]+x[40]*w[40]+x[41]*w[41]+x[42]*w[42]+x[43]*w[43]+x[44]*w[44]+x[45]*w[45]+x[46]*w[46]+x[47]*w[47]+x[48]*w[48]+x[49]*w[49]+x[50]*w[50]);
+    
+}
+PWM_1_WriteCompare(y);
+DAC_SetValue(y+108);
+
+
 }
 
 int main(void)
@@ -244,7 +249,8 @@ int main(void)
     DAC_Start();
     Timer_Start();
     ISR_StartEx(llegaMuestra);
-    LEDS_Write(0);
+    LEDS_Write(1);
+    PWM_1_Start();
     ISR_1_StartEx(INT_SW);
     //Fin inicialización variables
     LCD_Position(0,0);

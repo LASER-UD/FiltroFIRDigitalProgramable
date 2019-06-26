@@ -384,6 +384,7 @@
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Pin_ADC" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="LEDS" />
       <Data key="f264aac4-58aa-479c-ad60-99ef248e1a2d" value="PWMdir" />
+      <Data key="feef4479-6dd7-494b-8640-44c5442647ae" value="Pin_PWM" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3554,6 +3555,11 @@
     <Group key="f264aac4-58aa-479c-ad60-99ef248e1a2d">
       <Group key="0">
         <Data key="Port Format" value="2,3" />
+      </Group>
+    </Group>
+    <Group key="feef4479-6dd7-494b-8640-44c5442647ae">
+      <Group key="0">
+        <Data key="Port Format" value="3,0" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />
