@@ -57,6 +57,12 @@
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Pin_PWM_aliases.h" value="HEADER;;;;;Pin_PWM" />
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Pin_PWM.c" value="SOURCE_C;CortexM3;;;;Pin_PWM" />
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Pin_PWM.h" value="HEADER;;;;;Pin_PWM" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\VD.c" value="SOURCE_C;CortexM3;;;;VD" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\VD.h" value="HEADER;;;;;VD" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\VD_PM.c" value="SOURCE_C;CortexM3;;;;VD" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Salida_1_aliases.h" value="HEADER;;;;;Salida_1" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Salida_1.c" value="SOURCE_C;CortexM3;;;;Salida_1" />
+  <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\Salida_1.h" value="HEADER;;;;;Salida_1" />
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_IRQ.c" value="SOURCE_C;CortexM3;;;;ADC_IRQ" />
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_IRQ.h" value="HEADER;;;;;ADC_IRQ" />
   <file name="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\codegentemp\ADC_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_theACLK" />

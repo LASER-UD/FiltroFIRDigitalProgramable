@@ -382,6 +382,7 @@
       <Data key="72b0f3e8-705c-46ab-bddc-c4bbdc86b434/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="91cd31a7-36c1-4f80-8357-da335805490d" value="Salida" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Pin_ADC" />
+      <Data key="a2b6bd16-8afd-4314-af8b-c81433d4c0c8" value="Salida_1" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="LEDS" />
       <Data key="f264aac4-58aa-479c-ad60-99ef248e1a2d" value="PWMdir" />
       <Data key="feef4479-6dd7-494b-8640-44c5442647ae" value="Pin_PWM" />
@@ -3536,6 +3537,11 @@
     <Group key="77715107-f8d5-47e5-a629-0fb83101ac6b">
       <Group key="0">
         <Data key="Port Format" value="1,7" />
+      </Group>
+    </Group>
+    <Group key="a2b6bd16-8afd-4314-af8b-c81433d4c0c8">
+      <Group key="0">
+        <Data key="Port Format" value="1,6" />
       </Group>
     </Group>
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">

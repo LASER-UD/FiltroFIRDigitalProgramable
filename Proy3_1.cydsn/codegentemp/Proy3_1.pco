@@ -1,5 +1,5 @@
 # Proy3_1
-# 2019-06-26 01:02:01Z
+# 2019-06-26 15:06:07Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -21,6 +21,7 @@ set_io "\LCD:LCDPort(4)\" iocell 12 4
 set_io "\LCD:LCDPort(5)\" iocell 12 5
 set_io "\LCD:LCDPort(6)\" iocell 12 6
 set_io "Pin_PWM(0)" iocell 3 0
+set_io "Salida_1(0)" iocell 1 6
 set_location "\PWM_1:PWMUDB:status_2\" 2 2 0 0
 set_location "ISR" interrupt -1 -1 0
 set_location "\Timer:TimerHW\" timercell -1 -1 0
@@ -32,6 +33,7 @@ set_location "ISR_1" interrupt -1 -1 6
 set_location "\PWM_1:PWMUDB:genblk1:ctrlreg\" 2 2 6
 set_location "\PWM_1:PWMUDB:genblk8:stsreg\" 2 2 4
 set_location "\PWM_1:PWMUDB:sP8:pwmdp:u0\" 2 2 2
+set_location "\VD:viDAC8\" vidaccell -1 -1 1
 set_location "\PWM_1:PWMUDB:runmode_enable\" 2 2 0 1
 set_location "\PWM_1:PWMUDB:prevCompare1\" 2 2 0 3
 set_location "\PWM_1:PWMUDB:status_0\" 2 2 1 0

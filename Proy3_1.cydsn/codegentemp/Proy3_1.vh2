@@ -2,7 +2,7 @@
 --	Conversion of Proy3_1.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jun 25 20:01:57 2019
+--	Wed Jun 26 10:06:04 2019
 --
 
 USE cypress.cypress.all;
@@ -469,6 +469,16 @@ SIGNAL tmpFB_0__Pin_PWM_net_0 : bit;
 SIGNAL tmpIO_0__Pin_PWM_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_PWM_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_PWM_net_0 : bit;
+SIGNAL \VD:Net_83\ : bit;
+SIGNAL \VD:Net_81\ : bit;
+SIGNAL \VD:Net_82\ : bit;
+TERMINAL Net_239 : bit;
+TERMINAL \VD:Net_77\ : bit;
+SIGNAL tmpOE__Salida_1_net_0 : bit;
+SIGNAL tmpFB_0__Salida_1_net_0 : bit;
+SIGNAL tmpIO_0__Salida_1_net_0 : bit;
+TERMINAL tmpSIOVREF__Salida_1_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Salida_1_net_0 : bit;
 SIGNAL \PWM_1:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \PWM_1:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \PWM_1:PWMUDB:trig_last\\D\ : bit;
@@ -1169,6 +1179,91 @@ Pin_PWM:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__SW_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Pin_PWM_net_0);
+\VD:viDAC8\:cy_psoc3_vidac8_v1_0
+	GENERIC MAP(cy_registers=>"",
+		reg_data=>'0',
+		is_all_if_any=>'0')
+	PORT MAP(reset=>zero,
+		idir=>zero,
+		ioff=>zero,
+		data=>(zero, zero, zero, zero,
+			zero, zero, zero, zero),
+		strobe=>zero,
+		strobe_udb=>zero,
+		vout=>Net_239,
+		iout=>\VD:Net_77\);
+\VD:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\VD:Net_77\);
+Salida_1:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"a2b6bd16-8afd-4314-af8b-c81433d4c0c8",
+		drive_mode=>"000",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"A",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(tmpOE__SW_net_0),
+		y=>(zero),
+		fb=>(tmpFB_0__Salida_1_net_0),
+		analog=>Net_239,
+		io=>(tmpIO_0__Salida_1_net_0),
+		siovref=>(tmpSIOVREF__Salida_1_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>tmpOE__SW_net_0,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>tmpOE__SW_net_0,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Salida_1_net_0);
 \PWM_1:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__SW_net_0,
 		s=>zero,

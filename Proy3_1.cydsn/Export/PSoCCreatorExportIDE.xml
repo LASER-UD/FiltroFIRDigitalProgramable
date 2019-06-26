@@ -137,6 +137,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_PWM_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_PWM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_PWM.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VD.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VD.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VD_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Salida_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Salida_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Salida_1.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\LASER_2\Documents\PSoC Creator\FiltroFIRDigitalProgramable\Proy3_1.cydsn\Export\ARM_GCC_Generic">
